@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.MainTest" time="0.089" tests="30" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/oscar/Desktop/ISO2-2025-GrupoB05-Testing-P2/target/test-classes:/home/oscar/Desktop/ISO2-2025-GrupoB05-Testing-P2/target/classes:/home/oscar/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/oscar/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-25-oracle-x64/lib"/>
+    <property name="sun.java.command" value="/home/oscar/Desktop/ISO2-2025-GrupoB05-Testing-P2/target/surefire/surefirebooter-20251219134051061_3.jar /home/oscar/Desktop/ISO2-2025-GrupoB05-Testing-P2/target/surefire 2025-12-19T13-40-50_970-jvmRun1 surefire-20251219134051061_1tmp surefire_0-20251219134051061_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/oscar/Desktop/ISO2-2025-GrupoB05-Testing-P2/target/test-classes:/home/oscar/Desktop/ISO2-2025-GrupoB05-Testing-P2/target/classes:/home/oscar/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/oscar/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/oscar"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-09-16"/>
+    <property name="java.home" value="/usr/lib/jvm/jdk-25-oracle-x64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/oscar/Desktop/ISO2-2025-GrupoB05-Testing-P2"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/home/oscar/Desktop/ISO2-2025-GrupoB05-Testing-P2/target/surefire/surefirebooter-20251219134051061_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25+37-LTS-3491"/>
+    <property name="user.name" value="oscar"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.14.0-37-generic"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/oscar/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="25"/>
+    <property name="user.dir" value="/home/oscar/Desktop/ISO2-2025-GrupoB05-Testing-P2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25+37-LTS-3491"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="testCase29_Edad26Ingresos36000Frecuencia7BusinessDestinoAsiaSinNinos" classname="com.example.MainTest" time="0.006"/>
+  <testcase name="testCase12_Edad20NoEstudianteTurista2VuelosNoConPadres" classname="com.example.MainTest" time="0.0"/>
+  <testcase name="testCase27_Edad26Ingresos36000Frecuencia7TuristaDestinoAsiaConNinos" classname="com.example.MainTest" time="0.0"/>
+  <testcase name="testCase18_Edad26Ingresos36000Frecuencia7TuristaDestinoEuropaConNinos" classname="com.example.MainTest" time="0.0"/>
+  <testcase name="testCase30_Edad26Ingresos36000Frecuencia7BusinessDestinoAsiaConNinos" classname="com.example.MainTest" time="0.0"/>
+  <testcase name="testCase23_Edad26Ingresos24000Frecuencia7TuristaDestinoEuropaConNinos" classname="com.example.MainTest" time="0.0"/>
+  <testcase name="testCase2_MenorDeEdadCon5Vuelos" classname="com.example.MainTest" time="0.0"/>
+  <testcase name="testCase4_Edad26EstudianteTurista13Vuelos" classname="com.example.MainTest" time="0.001"/>
+  <testcase name="testCase7_Edad20EstudianteTurista11Vuelos" classname="com.example.MainTest" time="0.001"/>
+  <testcase name="testCase17_Edad26Ingresos19000Frecuencia7TuristaDestinoEuropaConNinos" classname="com.example.MainTest" time="0.001"/>
+  <testcase name="testCase19_Edad26Ingresos24000Frecuencia5TuristaDestinoEuropaConNinos" classname="com.example.MainTest" time="0.0"/>
+  <testcase name="testCase11_Edad20EstudianteTurista4VuelosConPadres" classname="com.example.MainTest" time="0.0"/>
+  <testcase name="testCase24_Edad20Ingresos36000Frecuencia7BusinessDestinoAsiaConNinos" classname="com.example.MainTest" time="0.0"/>
+  <testcase name="testCase5_Edad20NoEstudianteTurista13Vuelos" classname="com.example.MainTest" time="0.001"/>
+  <testcase name="testCase6_Edad20EstudianteBusiness13Vuelos" classname="com.example.MainTest" time="0.0"/>
+  <testcase name="testCase1_MenorDeEdadCon7Vuelos" classname="com.example.MainTest" time="0.0"/>
+  <testcase name="testCase22_Edad26Ingresos24000Frecuencia7TuristaDestinoEuropaSinNinos" classname="com.example.MainTest" time="0.0"/>
+  <testcase name="testCase16_Edad24Ingresos24000Frecuencia7TuristaDestinoEuropaConNinos" classname="com.example.MainTest" time="0.001"/>
+  <testcase name="testCase10_Edad26NoEstudianteTurista4VuelosConPadres" classname="com.example.MainTest" time="0.0"/>
+  <testcase name="testCase25_Edad26Ingresos24000Frecuencia7BusinessDestinoAsiaConNinos" classname="com.example.MainTest" time="0.001"/>
+  <testcase name="testCase3_MenorDeEdadEstudiante" classname="com.example.MainTest" time="0.0"/>
+  <testcase name="testCase9_Edad17EstudianteTurista4VuelosConPadres" classname="com.example.MainTest" time="0.001"/>
+  <testcase name="testCase28_Edad26Ingresos36000Frecuencia7BusinessDestinoEuropaConNinos" classname="com.example.MainTest" time="0.001"/>
+  <testcase name="testCase21_Edad26Ingresos24000Frecuencia7TuristaDestinoAsiaConNinos" classname="com.example.MainTest" time="0.0"/>
+  <testcase name="testCase20_Edad26Ingresos24000Frecuencia7BusinessDestinoEuropaConNinos" classname="com.example.MainTest" time="0.001"/>
+  <testcase name="testCase26_Edad26Ingresos36000Frecuencia5BusinessDestinoAsiaConNinos" classname="com.example.MainTest" time="0.001"/>
+  <testcase name="testCase13_Edad20NoEstudianteBusiness4VuelosConPadres" classname="com.example.MainTest" time="0.0"/>
+  <testcase name="testCase15_Edad20NoEstudianteTurista4VuelosConPadresGorrion" classname="com.example.MainTest" time="0.001"/>
+  <testcase name="testCase14_Edad20NoEstudianteTurista4VuelosNoConPadres" classname="com.example.MainTest" time="0.0"/>
+  <testcase name="testCase8_Edad20EstudianteTurista13VuelosGorrion" classname="com.example.MainTest" time="0.0"/>
+</testsuite>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Main.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">pr03</a> &gt; <a href="index.source.html" class="el_package">com.example</a> &gt; <span class="el_source">Main.java</span></div><h1>Main.java</h1><pre class="source lang-java linenums">package com.example;
+
+<span class="fc" id="L3">public class Main {</span>
+
+    public static void main(String[] args) {
+<span class="nc" id="L6">        System.out.println(&quot;Hello world!&quot;);</span>
+<span class="nc" id="L7">    }</span>
+
+    public Tarifa determinarTarifa(Cliente cliente) {
+
+        // Edad &lt; 18
+<span class="fc bfc" id="L12" title="All 2 branches covered.">        if (cliente.edad &lt; 18) {</span>
+            // Regla 1: Menor de edad y al menos 6 vuelos al año.
+<span class="fc bfc" id="L14" title="All 2 branches covered.">            if (cliente.frecuenciaViajes &gt;= 6) {</span>
+<span class="fc" id="L15">                return new Tarifa(&quot;Pajarillo&quot;, 0.10); // 10% descuento</span>
+            }
+        } // Edad 18-25
+<span class="pc bpc" id="L18" title="1 of 4 branches missed.">        else if (cliente.edad &gt;= 18 &amp;&amp; cliente.edad &lt;= 25) {</span>
+            // Regla 2: Estudiante, viaja en turista, al menos 12 vuelos (uno al mes)
+<span class="fc bfc" id="L20" title="All 2 branches covered.">            if (cliente.esEstudiante</span>
+<span class="fc bfc" id="L21" title="All 4 branches covered.">                    &amp;&amp; cliente.clasePreferida.equalsIgnoreCase(&quot;turista&quot;)</span>
+                    &amp;&amp; cliente.frecuenciaViajes &gt;= 12) {
+<span class="fc" id="L23">                return new Tarifa(&quot;Gorrión&quot;, 0.15); // 15% descuento</span>
+            }
+
+            // Regla 3 &amp; 4: Recién incorporados al mundo laboral.
+<span class="fc bfc" id="L27" title="All 4 branches covered.">            if (!cliente.esEstudiante</span>
+                    &amp;&amp; cliente.frecuenciaViajes &gt;= 3
+<span class="fc bfc" id="L29" title="All 2 branches covered.">                    &amp;&amp; cliente.clasePreferida.equalsIgnoreCase(&quot;turista&quot;)) {</span>
+
+                // Si vive con sus padres.
+<span class="fc bfc" id="L32" title="All 2 branches covered.">                if (cliente.viveConPadres) {</span>
+<span class="fc" id="L33">                    return new Tarifa(&quot;Viaja ahora que puedes&quot;, 0.05); // 5% descuento </span>
+                } // Si ya no vive con sus padres.
+                else {
+<span class="fc" id="L36">                    return new Tarifa(&quot;Atreviéndose a saltar del Nido&quot;, 0.25); // 25% descuento </span>
+                }
+            }
+        } // Edad &gt; 25
+<span class="pc bpc" id="L40" title="1 of 2 branches missed.">        else if (cliente.edad &gt; 25) {</span>
+
+            // 20.000€ &lt; Ingresos &lt;= 35.000€
+<span class="fc bfc" id="L43" title="All 4 branches covered.">            if (cliente.ingresos &gt; 20000 &amp;&amp; cliente.ingresos &lt;= 35000) {</span>
+
+                // Regla 5: Conoce Europa (Clase Turista, 6+ viajes, destino Europa)
+<span class="fc bfc" id="L46" title="All 2 branches covered.">                if (cliente.frecuenciaViajes &gt;= 6</span>
+<span class="fc bfc" id="L47" title="All 2 branches covered.">                        &amp;&amp; cliente.clasePreferida.equalsIgnoreCase(&quot;turista&quot;)</span>
+<span class="fc bfc" id="L48" title="All 2 branches covered.">                        &amp;&amp; cliente.destinoPreferido.equalsIgnoreCase(&quot;europa&quot;)) {</span>
+
+                    // Con niños: Conoce Europa con tus peques
+<span class="fc bfc" id="L51" title="All 2 branches covered.">                    if (cliente.viajaConNinos) {</span>
+<span class="fc" id="L52">                        return new Tarifa(&quot;Conoce Europa con tus peques&quot;, 0.10); // 10% </span>
+                    } // Sin niños: Conoce Europa
+                    else {
+<span class="fc" id="L55">                        return new Tarifa(&quot;Conoce Europa&quot;, 0.15); // 15% </span>
+                    }
+                }
+            } // Rango de ingresos alto (Ingresos &gt; 35.000€)
+<span class="fc bfc" id="L59" title="All 2 branches covered.">            else if (cliente.ingresos &gt; 35000) {</span>
+
+                // Regla 6: Conoce el Mundo (Clase Business, 6+ viajes, destino Asia/América)
+<span class="fc bfc" id="L62" title="All 2 branches covered.">                if (cliente.frecuenciaViajes &gt;= 6</span>
+<span class="fc bfc" id="L63" title="All 2 branches covered.">                        &amp;&amp; cliente.clasePreferida.equalsIgnoreCase(&quot;business&quot;)</span>
+<span class="fc bfc" id="L64" title="All 2 branches covered.">                        &amp;&amp; (cliente.destinoPreferido.equalsIgnoreCase(&quot;asia&quot;)</span>
+<span class="pc bpc" id="L65" title="1 of 2 branches missed.">                        || cliente.destinoPreferido.equalsIgnoreCase(&quot;america&quot;))) {</span>
+
+                    // Con niños: Conoce el Mundo con tus peques
+<span class="fc bfc" id="L68" title="All 2 branches covered.">                    if (cliente.viajaConNinos) {</span>
+<span class="fc" id="L69">                        return new Tarifa(&quot;Conoce el Mundo con tus peques&quot;, 0.10); // 10% </span>
+                    } // Sin niños: Conoce el Mundo
+                    else {
+<span class="fc" id="L72">                        return new Tarifa(&quot;Conoce el Mundo&quot;, 0.20); // 20% </span>
+                    }
+                }
+            }
+        }
+<span class="fc" id="L77">        throw new IllegalArgumentException(&quot;No se encontró una tarifa adecuada para el cliente.&quot;);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>
